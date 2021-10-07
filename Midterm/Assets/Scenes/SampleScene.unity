@@ -1101,6 +1101,7 @@ GameObject:
   - component: {fileID: 1839761693}
   - component: {fileID: 1839761695}
   - component: {fileID: 1839761694}
+  - component: {fileID: 1839761696}
   m_Layer: 0
   m_Name: EnemySpawner
   m_TagString: Untagged
@@ -1189,6 +1190,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839761691}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1839761696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839761691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5820ccd94c8234cb840e4b118501eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lowerBound: {x: 0.5, y: 0.5, z: 0.5}
+  upperBound: {x: 4, y: 4, z: 4}
 --- !u!1 &1848496442
 GameObject:
   m_ObjectHideFlags: 0
@@ -1338,7 +1353,6 @@ MonoBehaviour:
   wallSlideSpeed: 2
   accelSpeed: 5
   deccelSpeed: 5
-  health: 25
   maxHealth: 25
   worldBottom: -7
   spawnPoint: {fileID: 88561639}

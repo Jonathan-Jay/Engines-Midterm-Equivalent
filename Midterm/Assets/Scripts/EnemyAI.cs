@@ -42,6 +42,9 @@ public class EnemyAI : MonoBehaviour
 			stunned = true;
 			//knockback
 			rb.velocity = collider.offset * 5f + Vector2.up * 2.5f;
+
+			//new code:
+			transform.localScale = RandomScale.GetRandomScale();
 		}
 	}
 
